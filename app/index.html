@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>公共電視</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            background: #000;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            -webkit-app-region: drag;
+        }
+
+        iframe {
+            background: transparent;
+            width: 100%;
+            height: 100%;
+        }
+
+        .float {
+            position: absolute;
+            left: 0; right: 0;
+            z-index: 1;
+        }
+
+        .title-bar {
+            top: 0;
+            height: 40px;
+            -webkit-app-region: drag;
+        }
+
+        .control-bar {
+            bottom: 0;
+            height: 56px;
+            pointer-events: none;
+            -webkit-app-region: no-drag;
+        }
+    </style>
+</head>
+<body>
+    <div class="float title-bar"></div>
+    <iframe src="https://www.youtube.com/embed/zjGR32QyTkQ?&autoplay=1" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    <div class="float control-bar"></div>
+</body>
+</html>

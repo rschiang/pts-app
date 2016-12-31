@@ -1,0 +1,21 @@
+{
+  "name": "pts-app",
+  "version": "1.0.0",
+  "description": "App that embeds PTS Taiwan live stream",
+  "main": "app/index.js",
+  "dependencies": {
+    "electron": "^1.4.13",
+    "electronify": "^2.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rschiang/pts.git"
+  },
+  "author": "Poren Chiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rschiang/pts/issues"
+  },
+  "homepage": "https://github.com/rschiang/pts#readme"
+}
